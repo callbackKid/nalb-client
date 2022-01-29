@@ -1,0 +1,32 @@
+.button {
+  border: none;
+  padding: 16px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #080F0F;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #040808
+}
+
+.button:active {
+  background-color: #040808
+}
+
+
+.button.bright {
+  background-color: #D9FC51;
+  color: #080F0F;
+}
+
+.button.bright:hover {
+  background-color: #d2f34d;
+}
+
+.button.bright:active {
+  background-color: #c9e94a;
+}

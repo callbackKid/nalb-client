@@ -1,0 +1,8 @@
+.contact-page {
+  margin-top: 100px;
+}
+
+.contact-page .description {
+  max-width: 1128px;
+  margin: 0 auto 30px;
+}

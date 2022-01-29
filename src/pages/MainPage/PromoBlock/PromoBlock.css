@@ -1,0 +1,32 @@
+.promo-block {
+  display: flex;
+  margin-top: 75px;
+}
+
+.promo-block .info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.promo-block .info .meet-us {
+  margin-right: 25px;
+}
+
+.promo-block .info .slogan {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.promo-block .info .description {
+  margin-bottom: 40px;
+}
+
+.promo-block .carousel-container {
+  width: 50%;
+}
+
+.promo-block .carousel-container img {
+  max-width: 542px;
+}
