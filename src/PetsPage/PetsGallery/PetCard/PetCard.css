@@ -1,0 +1,17 @@
+.pet-card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.pet-card .pet-photo {
+  width: 168px;
+  height: 228px;
+  border-radius: 16px;
+}
+
+.pet-card .pet-name {
+  margin-top: 4px;
+  font-weight: bold;
+  font-size: 16px;
+}

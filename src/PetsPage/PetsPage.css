@@ -1,0 +1,8 @@
+.pets-page {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.pets-page .title {
+  margin-bottom: 40px;
+}
