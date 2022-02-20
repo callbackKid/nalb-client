@@ -1,5 +1,5 @@
 .pets-gallery {
   display: grid;
-  grid-template-columns: repeat(7, 168px);
+  grid-template-columns: repeat(6, 168px);
   grid-gap: 24px;
 }

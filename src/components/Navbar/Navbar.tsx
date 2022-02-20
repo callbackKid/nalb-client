@@ -15,21 +15,21 @@ export const Navbar = () => {
         <NavLink className='navbar-link' to='/pets'>
           подопечные
         </NavLink>
-        <NavLink className='navbar-link' to='/help-us'>
+        {/* <NavLink className='navbar-link' to='/help-us'>
           как помочь
-        </NavLink>
-        <NavLink className='navbar-link' to='/team'>
+        </NavLink> */}
+        {/* <NavLink className='navbar-link' to='/team'>
           наша команда
-        </NavLink>
+        </NavLink> */}
         <NavLink className='navbar-link' to='/contact'>
           контакты
         </NavLink>
-        <NavLink className='navbar-link' to='/merch'>
+        {/* <NavLink className='navbar-link' to='/merch'>
           мерч
         </NavLink>
         <NavLink className='navbar-link' to='/blog'>
           блог
-        </NavLink>
+        </NavLink> */}
       </div>
     </nav>
   );

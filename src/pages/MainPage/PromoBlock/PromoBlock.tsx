@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Button } from '../../../components/Button/Button';
 import { Carousel } from './Carousel/Carousel';
 import './PromoBlock.css';
@@ -12,10 +13,14 @@ export const PromoBlock = () => {
           дома для 50 собак.
         </p>
         <div className='buttons-container'>
-          <Button design='bright' className='meet-us'>
-            Познакомиться
-          </Button>
-          <Button design='normal'>Сделать пожертвование</Button>
+          <Link to='/pets'>
+            <Button design='bright' className='meet-us'>
+              Познакомиться
+            </Button>
+          </Link>
+          <Link to='donation'>
+            <Button design='normal'>Сделать пожертвование</Button>
+          </Link>
         </div>
       </div>
       <div className='carousel-container'>
