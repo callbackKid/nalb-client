@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Button } from '../../../components/Button/Button'
-import { S } from './Carousel/Carousel'
+import { Carousel } from './Carousel/Carousel'
 import './PromoBlock.css'
 
 export const PromoBlock = () => {

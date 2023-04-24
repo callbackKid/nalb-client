@@ -1,13 +1,12 @@
-import Slider, {Settings} from "react-slick";
-import { carouselImgs } from './media/data';
+import Slider, { Settings } from 'react-slick'
+import { carouselImgs } from './media/data'
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import 'swiper/swiper-bundle.css';
-import  './Carousel.css';
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import 'swiper/swiper-bundle.css'
+import './Carousel.css'
 
 export const Carousel = () => {
-
   const settings: Settings = {
     infinite: true,
     dots: true,
@@ -21,16 +20,14 @@ export const Carousel = () => {
     cssEase: 'linear',
   }
   return (
-    <div className = 'carousel'>
+    <div className="carousel">
       <Slider {...settings}>
-      {
-        carouselImgs.map((image, i) => (
-          <div key = {i}>
-            <img src = {image} alt = {image} />
+        {carouselImgs.map((image, i) => (
+          <div key={i}>
+            <img src={image} alt={image} />
           </div>
-        ))
-      }
+        ))}
       </Slider>
     </div>
-  );
-};
+  )
+}
