@@ -1,22 +1,38 @@
 .carousel {
   height: 100%;
-
 }
+
 .carousel img {
   border-radius: 15px;
 }
+
 .slick-slide {
   text-align: center;
   transition: transform 0.3s ease-in-out;
 }
 
 .slick-track {
-  padding: 53px 0;
+  padding: 10% 0;
 }
 
 .slick-slide img {
   width: 100%;
+}
 
+.slick-next, .slick-prev {
+  opacity: 0;
+  height: 55%;
+  width: 27%;
+  top: 48%;
+  z-index: 100;
+} 
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
 }
 
 .slick-slide.slick-current {
