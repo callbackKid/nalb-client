@@ -10,19 +10,19 @@ export const Navbar = () => {
       </NavLink>
       <div className='links'>
         <NavLink className='navbar-link' to='/donation'>
-          донаты
+          Донаты
         </NavLink>
         <NavLink className='navbar-link' to='/pets'>
-          подопечные
+          Подопечные
         </NavLink>
-        {/* <NavLink className='navbar-link' to='/help-us'>
-          как помочь
-        </NavLink> */}
-        {/* <NavLink className='navbar-link' to='/team'>
-          наша команда
-        </NavLink> */}
+        <NavLink className='navbar-link' to='/help-us'>
+          Как помочь
+        </NavLink>
+        <NavLink className='navbar-link' to='/team'>
+          Наша команда
+        </NavLink>
         <NavLink className='navbar-link' to='/contact'>
-          контакты
+          Контакты
         </NavLink>
         {/* <NavLink className='navbar-link' to='/merch'>
           мерч
