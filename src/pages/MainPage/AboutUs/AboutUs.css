@@ -17,7 +17,8 @@
 .about-us .cards-container .card {
   display: flex;
   justify-content: center;
-  width: 360px;
+  width: 33%;
+  /* width: 360px; */
   height: 220px;
 }
 
@@ -45,4 +46,23 @@
 
 .about-us .cards-container .card .text-container .text {
   margin-top: 66px;
+}
+
+@media (max-width: 1024px) {
+  .cards-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-us .cards-container .card {
+    width: 100%;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .about-us .cards-container .card .text-container {
+    min-height: 100px;
+  }
 }
