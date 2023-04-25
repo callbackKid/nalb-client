@@ -1,8 +1,8 @@
 .about-us {
+  margin-top: 18px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 100px;
 }
 
 .about-us .title {
@@ -29,7 +29,7 @@
   justify-content: center;
   width: 88px;
   height: 88px;
-  background-color: #D9FC51;
+  background-color: #d9fc51;
   border-radius: 50%;
 }
 

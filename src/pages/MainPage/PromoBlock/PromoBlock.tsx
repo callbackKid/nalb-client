@@ -14,7 +14,7 @@ export const PromoBlock = () => {
         <div className="buttons-container">
           <Link to="/pets">
             <Button design="bright" className="meet-us">
-              Познакомиться
+              Найти Друга
             </Button>
           </Link>
           <Link to="donation">
