@@ -4,7 +4,7 @@ import { AboutUs } from './AboutUs/AboutUs';
 
 export const MainPage = () => {
   return (
-    <div className='main-page'>
+    <div className='main-page container'>
       <PromoBlock />
       <AboutUs />
     </div>

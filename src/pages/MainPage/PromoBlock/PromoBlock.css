@@ -30,3 +30,41 @@
 .promo-block .carousel-container img {
   max-width: 542px;
 }
+
+
+@media (max-width: 1024px) {
+  .promo-block {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  } 
+
+  .promo-block .info .slogan {
+    margin-top: 0;
+  }
+
+  .promo-block .info {
+    width: 100%;
+  }
+
+  .promo-block .carousel-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 474px) {
+  .promo-block .info .slogan {
+    font-size: 54px;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .promo-block .info .meet-us {
+    margin-right: 0;
+  }
+}
