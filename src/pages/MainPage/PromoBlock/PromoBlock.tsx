@@ -24,7 +24,6 @@ export const PromoBlock = () => {
       </div>
       <div className="carousel-container">
         <Carousel />
-        {/* <img src='/main-banner.png' /> */}
       </div>
     </div>
   )
