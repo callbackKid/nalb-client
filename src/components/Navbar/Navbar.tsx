@@ -3,28 +3,33 @@ import { NavLink } from 'react-router-dom'
 import { Logo } from '../Logo/Logo'
 import { FoldableMenu } from './FoldableMenu/FoldableMenu'
 import { CgMenuRight } from 'react-icons/cg'
-import { motion } from 'framer-motion'
-import './Navbar.css'
 
+import './Navbar.css'
 
 export const Navbar = () => {
   const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false)
   const menuDivRef = useRef<HTMLDivElement>(null)
+  const menuContainer = document.querySelector('.links-container') as HTMLDivElement
+  const menuBlock = document.querySelector('.links') as HTMLDivElement
 
   document.addEventListener('click', (event: MouseEvent) => {
     const target = event.target as Element
 
     if (!menuDivRef.current?.contains(target) ) {
       setIsMenuOpened(false)
-    } else {
-      setIsMenuOpened(!isMenuOpened)
-    }
+     } 
+    //  else {
+    //   setIsMenuOpened(isMenuOpened ? false : true )
+    //  }
 
   })
 
-  const variants = {
-    visible: { display: 'flex', opacity: 1 },
-    hidden: { display: 'none', opacity: 0 }
+  if (isMenuOpened){
+      menuBlock?.classList.add('isOpened')
+    document.querySelector('.links-container')?.classList.add('isOpened')
+  } else {
+    menuBlock?.classList.remove('isOpened')
+    menuContainer?.classList.remove('isOpened')
   }
 
   return (
@@ -33,22 +38,15 @@ export const Navbar = () => {
       <NavLink to="/">
         <Logo />
       </NavLink>
-      <div className = 'desktop-menu'>
+      <div className = 'links-container'>
         <FoldableMenu  />
       </div>
 
-      <motion.div 
-        className="links"
-        animate = {isMenuOpened ? 'visible' : 'hidden'}
-        variants = {variants}
-        initial = 'hidden'
+      <div className = 'menu-icon'  
         ref = {menuDivRef}
-      >
-        <FoldableMenu />
-      </motion.div>
-
-      <div className = 'menu-icon' ref = {menuDivRef}>
-        <CgMenuRight />
+        onClick = {() => setIsMenuOpened(isMenuOpened ? false : true )}
+      > 
+        <CgMenuRight/>
       </div>
       
     </nav>

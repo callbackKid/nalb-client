@@ -5,7 +5,7 @@ import './FoldableMenu.css'
 
 export const FoldableMenu = () => {
   return (
-    <>
+    <div className = 'links'>
       <NavLink className="navbar-link" to="/donation">
           Донаты
         </NavLink>
@@ -27,6 +27,6 @@ export const FoldableMenu = () => {
         <NavLink className="navbar-link" to="/blog">
           Блог
         </NavLink>
-    </>
+    </div>
   )
 }
