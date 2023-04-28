@@ -1,11 +1,11 @@
-
 import { NavLink } from 'react-router-dom'
-
+import { IProps } from '../interfaces'
 import './FoldableMenu.css'
 
-export const FoldableMenu = () => {
+export const FoldableMenu = ({isOpened}: IProps) => {
+
   return (
-    <div className = 'links'>
+    <div className = {[isOpened ? 'isOpened' : '', 'links'].join(' ')}>
       <NavLink className="navbar-link" to="/donation">
           Донаты
         </NavLink>
