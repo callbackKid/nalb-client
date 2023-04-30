@@ -18,3 +18,46 @@
   background-color: #d9fc51;
   z-index: -1;
 }
+
+@keyframes openMenu {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+.links.isOpened {
+  animation-name: openMenu;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+@media (max-width: 1024px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 20px 20px 20px 0;
+    gap: 20px;
+    align-items: start;
+    width: 33%;
+  }
+}
+
+@media (max-width: 474px) {
+  .links {
+    width: 50%;
+  }
+} 
+
+@media (max-width: 425px) {
+  .links {
+    width: 100%;
+  }
+}

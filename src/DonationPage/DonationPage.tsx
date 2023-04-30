@@ -9,7 +9,7 @@ export const DonationPage = () => {
         width='423'
         height='227'
         frameBorder='0'
-        allowTransparency
+        // allowTransparency
         scrolling='no'
       ></iframe>
     </div>

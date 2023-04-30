@@ -8,59 +8,26 @@
   position: relative;
 }
 
-/* .navbar-link {
-  color: #080f0f;
-  text-decoration: none;
-  margin-left: 32px;
+.links-container.isOpened {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 
-.navbar-link:hover {
-  background-color: #d9fc51;
-} */
-/* .navbar-link.active::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  height: 5px;
-  width: 100%;
-  background-color: #d9fc51;
-  z-index: -1;
-} */
 .menu-icon {
   display: none;
   font-size: 54px;
   color: gray;
   cursor: pointer;
 }
-@media (max-width: 1024px) {
-  .desktop-menu {
-    display: none;
-  }
-  .links {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    right: 0;
-    top: 10%;
-    z-index: 100;
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 5px;
-    padding: 20px 20px 20px 0;
-    gap: 20px;
-    align-items: start;
-    width: 33%;
-  }
 
+@media (max-width: 1024px) {
   .menu-icon {
     display: block;
   }
 }
 
-@media (max-width: 425px) {
-  .links {
-    width: 100%;
-  }
-}
