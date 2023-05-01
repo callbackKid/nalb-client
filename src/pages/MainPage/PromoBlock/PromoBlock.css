@@ -31,6 +31,12 @@
   max-width: 542px;
 }
 
+@media (max-width: 1120px) {
+  .button {
+    width: 48%;
+    padding: 16px 20px;
+  }
+}
 
 @media (max-width: 1024px) {
   .promo-block {
