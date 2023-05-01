@@ -9,7 +9,7 @@ export const PromoBlock = () => {
       <div className="info">
         <h1 className="slogan">Помогаем животным</h1>
         <p className="description">
-          Организовываем и курируем поездки в приют, ветеринарную помощь и поиск дома для 50 собак.
+          Организовываем и курируем поездки в приют, ветеринарную помощь и поиск дома для 20 собак.
         </p>
         <div className="buttons-container">
           <Link to="/pets">

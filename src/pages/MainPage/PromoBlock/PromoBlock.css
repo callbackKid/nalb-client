@@ -60,10 +60,11 @@
   .buttons-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
   }
-
+  .button {
+    width: 100%;
+  }
   .promo-block .info .meet-us {
     margin-right: 0;
   }
