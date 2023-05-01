@@ -31,6 +31,13 @@
   max-width: 542px;
 }
 
+@media (max-width: 1120px) {
+  .button {
+    width: 47%;
+    padding: 16px 18px;
+  }
+}
+
 @media (max-width: 1024px) {
   .promo-block {
     flex-direction: column;
