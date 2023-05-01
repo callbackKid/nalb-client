@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import { Navbar } from './components/Navbar/Navbar'
-import { DonationPage } from './DonationPage/DonationPage'
+import { DonationPage } from './pages/DonationPage/DonationPage'
 import { ContactPage } from './pages/ContactPage/ContactPage'
 import { MainPage } from './pages/MainPage/MainPage'
-import { PetsPage } from './PetsPage/PetsPage'
+import { PetsPage } from './pages/PetsPage/PetsPage'
 
 function App() {
   return (

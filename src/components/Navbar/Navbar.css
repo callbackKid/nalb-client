@@ -1,6 +1,4 @@
 .navbar {
-  padding: 18px 0;
-  /* max-width: 1060px; */
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -30,4 +28,3 @@
     display: block;
   }
 }
-

@@ -10,7 +10,7 @@
 }
 
 .promo-block .info .meet-us {
-  margin-right: 25px;
+  margin-right: 2%;
 }
 
 .promo-block .info .slogan {
@@ -43,18 +43,19 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-  } 
+  }
 
   .promo-block .info .slogan {
     margin-top: 0;
   }
 
   .promo-block .info {
-    width: 100%;
+    width: 90%;
   }
 
   .promo-block .carousel-container {
-    width: 100%;
+    margin-top: 45px;
+    width: 90%;
   }
 }
 
@@ -66,10 +67,11 @@
   .buttons-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
   }
-
+  .button {
+    width: 100%;
+  }
   .promo-block .info .meet-us {
     margin-right: 0;
   }
