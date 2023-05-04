@@ -1,12 +1,11 @@
 import { YandexMap } from './Map/Map';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import Map from './GoogleMap/Map'
+import { useState } from 'react';
+import { GoogleMap, LoadScript, Marker, DirectionsService, DirectionsRenderer } from '@react-google-maps/api';
 import './ContactPage.css';
 import { API_KEY } from '../../api_key';
 
-const noanimalleft = { lat: 55.663350, lng: 37.716761 };
-const containerStyle = {
-  height: '500px'
-}
+
 // function initMap(): void {
 //   const noanimalleft = { lat: 55.663350, lng: 37.716761 };
 //   const map = new google.maps.Map(
@@ -70,19 +69,8 @@ export const ContactPage = () => {
       
       {/* <YandexMap /> */}
       {/* <div id = 'map'></div> */}
-
-      <LoadScript
-        googleMapsApiKey = {API_KEY}
-      >
-        <GoogleMap
-          mapContainerStyle = {containerStyle}
-          center={noanimalleft}
-          zoom={15}
-        >
-          { /* Child components, such as markers, info windows, etc. */ }
-          <Marker position = {noanimalleft}/>
-        </GoogleMap>
-      </LoadScript>
+          <Map />
+      
     </div>
   );
 };

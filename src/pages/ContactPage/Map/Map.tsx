@@ -1,4 +1,5 @@
 export const YandexMap = () => {
+  
   return (
     <div className='map-container'>
       <iframe
