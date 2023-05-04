@@ -3,17 +3,16 @@ import { GoogleMap, LoadScript, Marker, DirectionsService, DirectionsRenderer, u
 
 import { API_KEY } from '../../../api_key';
 
-const noanimalleft: google.maps.LatLngLiteral = { lat: 55.66321206974529, lng: 37.7167484164238 };
-
-const containerStyle = {
-  height: '500px'
-}
-
 export default function Map() {
   const [start, setStart] = useState<google.maps.LatLngLiteral>()
   const [travelMode, setTravelMode] = useState<google.maps.TravelMode | null>(null)
   const [response, setResponse] = useState<google.maps.DirectionsResult | null>(null)
+  const noanimalleft: google.maps.LatLngLiteral = { lat: 55.66321206974529, lng: 37.7167484164238 };
 
+  const containerStyle = {
+    height: '500px'
+  }
+  
   const directionsCallback = (result: google.maps.DirectionsResult | null, status: google.maps.DirectionsStatus) => {
     if (result !== null) {
       if (status === 'OK') {
