@@ -14,57 +14,10 @@
   justify-content: space-between;
 }
 
-.about-us .cards-container .card {
-  display: flex;
-  justify-content: center;
-  width: 33%;
-  height: 220px;
-}
-
-.card .image-container {
-  position: absolute;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 88px;
-  height: 88px;
-  background-color: #d9fc51;
-  border-radius: 50%;
-}
-
-.about-us .cards-container .card .text-container {
-  margin-top: 42px;
-  display: flex;
-  background-color: #000;
-  color: #fff;
-  height: 178px;
-  border-radius: 16px;
-  padding: 0 32px 40px;
-}
-
-.about-us .cards-container .card .text-container .text {
-  margin-top: 66px;
-}
 
 @media (max-width: 1024px) {
   .cards-container {
     flex-direction: column;
     gap: 20px;
-  }
-
-  .about-us .cards-container .card {
-    width: 100%;
-  }
-
-  .text {
-    text-align: center;
-  }
-
-  .about-us .cards-container .card .text-container {
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
-    width: 90%;
   }
 }
