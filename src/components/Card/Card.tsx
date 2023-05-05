@@ -2,7 +2,7 @@ import './Card.css'
 interface ICardProps {
 	img: string
 	text: string
-	description: string
+	description: string,
 }
 export default function Card({img, text, description}: ICardProps):JSX.Element {
   return (

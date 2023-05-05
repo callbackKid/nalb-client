@@ -1,37 +1,8 @@
 import { YandexMap } from './Map/Map';
-import Map from './GoogleMap/Map'
 import { useState } from 'react';
-import { GoogleMap, LoadScript, Marker, DirectionsService, DirectionsRenderer } from '@react-google-maps/api';
+import Map from './GoogleMap/Map'
+import Card from '../../components/Card/Card';
 import './ContactPage.css';
-import { API_KEY } from '../../api_key';
-
-
-// function initMap(): void {
-//   const noanimalleft = { lat: 55.663350, lng: 37.716761 };
-//   const map = new google.maps.Map(
-//     document.getElementById("map") as HTMLElement,
-//     {
-//       zoom: 15,
-//       center: noanimalleft,
-//     }
-//   );
-
-//   const marker = new google.maps.Marker({
-//     position: noanimalleft,
-//     map: map,
-//   });
-
-//   map.addListener('click', () => {
-//     map.
-//   }) 
-// }
-
-// declare global {
-//   interface Window {
-//     initMap: () => void;
-//   }
-// }
-// window.initMap = initMap;
 
 export const ContactPage = () => {
 
@@ -68,8 +39,9 @@ export const ContactPage = () => {
       </p>
       
       {/* <YandexMap /> */}
-      {/* <div id = 'map'></div> */}
-          <Map />
+
+      <Map />
+
       
     </div>
   );
